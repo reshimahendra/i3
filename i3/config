@@ -30,8 +30,8 @@ bindsym Control+Shift+f exec --no-startup-id firefox;workspace www;focus
 bindsym Control+Shift+e exec --no-startup-id nemo;workspace media;focus
 bindsym Control+Shift+m exec --no-startup-id rhythmbox;workspace media;focus
 bindsym Control+Shift+z exec --no-startup-id code;workspace code;focus
-bindsym Control+Shift+i exec --no-startup-id inkscape;workspace media;focus
-bindsym Control+Shift+g exec --no-startup-id gimp;workspace media;focus
+bindsym Control+Shift+i exec --no-startup-id inkscape;workspace graphic;focus
+bindsym Control+Shift+g exec --no-startup-id gimp;workspace graphic;focus
 bindsym Control+Shift+b exec --no-startup-id gnome-boxes;workspace 6;focus
 bindsym Control+Shift+o exec --no-startup-id libreoffice;workspace work;focus
 bindsym Control+Shift+t exec --no-startup-id thunderbird;workspace work;focus
@@ -104,27 +104,27 @@ bindsym $alt+Control+h workspace prev
 bindsym $alt+Control+Right workspace next
 bindsym $alt+Control+Left workspace prev
 bindsym $super+1 workspace 1
-bindsym $super+2 workspace 2
-bindsym $super+3 workspace 3
-bindsym $super+4 workspace 4
-bindsym $super+5 workspace 5
+bindsym $super+2 workspace code
+bindsym $super+3 workspace www
+bindsym $super+4 workspace work
+bindsym $super+5 workspace media
 bindsym $super+6 workspace 6
-bindsym $super+7 workspace work
-bindsym $super+8 workspace media
-bindsym $super+9 workspace code
-bindsym $super+0 workspace www
+bindsym $super+7 workspace 7
+bindsym $super+8 workspace graphic
+bindsym $super+9 workspace 9
+bindsym $super+0 workspace 0
 
 # move focused container to workspace
 bindsym $super+Shift+1 move container to workspace 1
-bindsym $super+Shift+2 move container to workspace 2
-bindsym $super+Shift+3 move container to workspace 3
-bindsym $super+Shift+4 move container to workspace 4
-bindsym $super+Shift+5 move container to workspace 5
+bindsym $super+Shift+2 move container to workspace code
+bindsym $super+Shift+3 move container to workspace www
+bindsym $super+Shift+4 move container to workspace work
+bindsym $super+Shift+5 move container to workspace media
 bindsym $super+Shift+6 move container to workspace 6
-bindsym $super+Shift+7 move container to workspace work
-bindsym $super+Shift+8 move container to workspace media
-bindsym $super+Shift+9 move container to workspace code
-bindsym $super+Shift+0 move container to workspace www
+bindsym $super+Shift+7 move container to workspace 7
+bindsym $super+Shift+8 move container to workspace graphic
+bindsym $super+Shift+9 move container to workspace 9
+bindsym $super+Shift+0 move container to workspace 0
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $super+Shift+r restart
