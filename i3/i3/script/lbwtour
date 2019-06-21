@@ -1,0 +1,15 @@
+#/bin/bash
+function finish {
+    echo "kill port:8000 used by Django before finish"
+    fuser -k 8000/tcp
+}
+echo "set virtual environtment"
+#set -x
+source $HOME/.local/bin/virtualenvwrapper.sh
+workon lbwhotel
+#set +x
+echo "run django local server and watch sass"
+python3 $HOME/projects/lbwtour/manage.py runserver & scss --watch $HOME/projects/lbwtour/theme-design/default/scss/style.scss:$HOME/projects/lbwtour/lotus/static/default/css/default.css
+
+# trap and clean script resources before finish
+trap finish EXIT
