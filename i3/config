@@ -16,8 +16,8 @@ exec --no-startup-id /home/reshi/.config/i3/conky/bin/start_conky_green
 
 
 # start a terminal
-bindsym $super+Return exec i3-sensible-terminal --hide-menubar
-# bindsym $super+Return exec gnome-terminal --hide-menubar
+# bindsym $super+Return exec i3-sensible-terminal --hide-menubar
+bindsym $super+Return exec --no-startup-id urxvt 
 
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"

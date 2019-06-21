@@ -1,6 +1,0 @@
-#!/bin/bash
-
-conky -c /home/reshi/.config/i3/conky/config/conky1.10_shortcuts_green &&
-conky -c /home/reshi/.config/i3/conky/config/conky_green &&
-
-exit 0

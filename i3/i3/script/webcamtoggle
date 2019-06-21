@@ -1,2 +1,0 @@
-#!/bin/bash
-pkill -f /dev/video ||  mpv --geometry=-10-10 --autofit=25% --video-rotate 180 /dev/video0
