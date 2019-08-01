@@ -1,0 +1,4 @@
+dd if=<source file name> of=<target file name> [Options]
+
+example:
+    dd if=/home/linux.iso of=/media/sdb2 bs=2048 conv=noerror,sync
